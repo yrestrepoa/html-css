@@ -1,0 +1,124 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(images/bg-mobile.svg);
+}
+main{
+    width: 595px;
+    height: 1448px;
+    margin: 75px auto 40px;
+}
+/* SECCION UNO */
+#seccion1{
+    height: 724px;
+}
+#logo-container{
+    width: 180px;
+}
+#mockup{
+    width: 595px;
+}
+
+/* SECCION DOS */
+#seccion2{
+    height: 724px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    text-align: center;
+    height: 170px;
+}
+#seccion2 p{
+    font-size: 31px;
+    text-align: center;
+    height: 280px;
+}
+.btn-register{
+    text-align: center;
+}
+.btn-register a {
+    width: 400px;
+    height: 86px;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 25px;
+    color: var(--Violet);
+    display: inline-block;
+    padding: 22px;
+    text-decoration: none;
+}
+.btn-register a:hover{
+    background-color: var(--SoftMagenta);
+    color: #fff;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width:1284px){
+    
+    body{
+        background-image: url(images/bg-desktop.svg);
+        background-size: unset;
+    }
+    main{
+        margin: 60px auto 0px;
+        width: 1284px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* Seccion uno */
+    #seccion1{
+        width: 753px;
+        height: 700px;
+    }
+    #logo-container{
+        height: 134px;
+    }
+    #mockup{
+       height: 134px; 
+    }
+     /* Seccion dos */
+     #seccion2{
+        height: 700px;
+     }
+     h1{
+        margin-top: 165px;
+        height: 133px;
+        font-size: 39px;
+        text-align: left;
+        padding-right: 93px;
+     }
+     #seccion2 p{
+        height: 98px;
+        font-size: 18px;
+        text-align: left;
+        padding-right: 17px;
+     }
+     .btn-register{
+        text-align: left;
+        margin-bottom: 179px;
+     }
+     .btn-register a{
+        width: 200px;
+        height: 58px;
+        font-size: 19px;
+        padding-top: 14px;
+        text-align: center;
+     }
+}
